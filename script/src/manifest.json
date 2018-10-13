@@ -1,0 +1,13 @@
+{
+  "name": "クソサイトブロッカー",
+  "description": "知りたい情報が無いクソサイトやアフィリエイトリンクしかないサイトを検索結果からブロックします",
+  "version": "0.1",
+  "manifest_version": 2,
+  "content_scripts": [{
+    "matches": ["*://www.google.co.jp/*"],
+    "js": ["main.js"]
+  }],
+  "browser_action" : {
+    "default_popup" : "popup.html"
+  }
+}
